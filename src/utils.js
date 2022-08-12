@@ -7,7 +7,7 @@ exports.protected_axios = (path, data, ) => {
 }
 
 exports.getApiPath = (path) => {
-    return "http://localhost:3000/" + path;
+    return window.location.protocol + window.location.host + path;
 }
 
 exports.validateEmail = (mail) => {
