@@ -1,0 +1,27 @@
+
+.mailscape-layout{
+    background-color: white;
+}
+
+.email-widget-sider{
+    background-color: transparent;
+    border-right: 2px solid #afb0cd33;
+}
+
+.email-widget-search{
+    border-radius: 0;
+    border: none;
+    background-color: #d3d5e733 ;
+    padding: 1em 0.8em;
+    border-bottom: 2px solid #afb0cd33;
+}
+
+.email-widget-search:hover{
+    background-color: #b6b8ce33;
+}
+
+.email-widget-search .ant-input-prefix{
+    color: #BABBD1;
+    font-size: 1.4em;
+    margin-right: 0.4em;
+}

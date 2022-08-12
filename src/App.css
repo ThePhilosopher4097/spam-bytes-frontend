@@ -13,8 +13,9 @@
   }
 }
 
+
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +36,31 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.primary-shadow{
+  box-shadow: 0px 0px 10px 1px #32346799 ;
+}
+
+.glow{
+  box-shadow: 0px 0px 10px 3px #3b3b3b73 ;
+}
+
+.ant-btn-primary.dark[disabled]{
+  background-color: #101020;
+  border: 1px solid #101020 !important;
+  color: #E5E5E5;
+  opacity: 0.5;
+}
+
+/* .primary-shadow:hover{
+  background-color: #3f4281 !important;
+  box-shadow: 0px 0px 10px 1px #32346799 ;
+} */
+
+.auth-error{
+  color: red;
+  opacity: 0.5;
+  font-size: 0.9em;
 }

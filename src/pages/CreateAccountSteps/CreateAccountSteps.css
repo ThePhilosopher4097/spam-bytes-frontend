@@ -1,0 +1,21 @@
+.form-container{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+}
+
+.input-wrapper{
+    font-weight: 600;
+}
+
+h1{
+    margin-bottom: 0em !important;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+
+}

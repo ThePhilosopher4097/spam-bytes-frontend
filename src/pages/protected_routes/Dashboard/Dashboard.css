@@ -1,0 +1,35 @@
+.dashboard-wrapper{
+    height: 100vh;
+    background-color: white;
+}
+
+.dashboard-sidebar .ant-menu-item{
+    border-left: 4px solid transparent;    
+    border-top: 1px solid transparent;    
+    border-bottom: 1px solid transparent;
+    border-right: 4px solid transparent;
+    padding-left: 1.86em !important;
+}
+.dashboard-sidebar .ant-menu-item-selected{
+    border-left: 4px solid #5759A3;    
+    border-top: 1px solid #575aa31a;    
+    border-bottom: 1px solid #575aa31a;    
+    background-color: rgba(87, 89, 163, 0.1) !important;
+    
+}
+
+.dashboard-sidebar .ant-menu-item-icon{
+    font-size: 1.5em !important;
+}
+
+.dashboard-sidebar{
+    background-color: rgba(87, 90, 163, 0.05);
+}
+
+.ant-menu-item-selected:after{
+    display: none !important;
+}
+
+/* .dashboard-view-container{
+
+} */

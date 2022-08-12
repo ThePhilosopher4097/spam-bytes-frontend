@@ -1,0 +1,56 @@
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-image: none;
+}
+
+.panels{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100vw;
+    height: 100vh;
+}
+
+.panel{
+    display: flex;
+    flex: 5;
+    height: 100%;
+    padding: 2em;
+
+}
+
+.panel:nth-child(2){
+    background-color: #e5e5e5;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.panel:nth-child(1){
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex: 4.5;
+}
+
+.panel:nth-child(1) > img{
+    width: 70%;
+}
+
+
+.inputs-container{
+    padding: 1em;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.inputs-container input{
+    margin: 0.3em 0;
+    max-width: 400px;
+    min-width: 200px;
+    width: 40vw !important;
+}
