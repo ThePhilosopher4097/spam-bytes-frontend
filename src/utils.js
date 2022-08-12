@@ -7,7 +7,7 @@ exports.protected_axios = (path, data, ) => {
 }
 
 exports.getApiPath = (path) => {
-    return window.location.protocol + window.location.hostname + `:${3000}` + path;
+    return window.location.protocol + "//" + window.location.hostname + ":3000" + "/" + path;
 }
 
 exports.validateEmail = (mail) => {
