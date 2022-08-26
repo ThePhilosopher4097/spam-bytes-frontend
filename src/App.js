@@ -8,6 +8,7 @@ import SignIn from './pages/SignIn/SignIn';
 import CreateAccountSteps from './pages/CreateAccountSteps/CreateAccountSteps';
 import Dashboard from './pages/protected_routes/Dashboard/Dashboard';
 import MailScape from './pages/protected_routes/MailScape/MailScape';
+import Redirect from './pages/protected_routes/Dashboard/Redirect';
 
 
 function App() {
@@ -24,13 +25,12 @@ function App() {
       <Route path="create_account" element={<CreateAccount/>} />
       <Route path="create_account/continue" element={<CreateAccountSteps/>} />
       <Route path="sign_in" element={<SignIn/>} />
+      <Route path="/dashboard/redirect" element={<Redirect/>} />
 
-      <Route path="/dashboard" element={<MailScape />}>
+      <Route path="/dashboard/:category" element={<MailScape />}>
         {/* <Route path="" element={<MailScape />} /> */}
       </Route>
 
-      
-        
       </Routes>
     </BrowserRouter>
   );

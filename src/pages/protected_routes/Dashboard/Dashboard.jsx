@@ -4,34 +4,41 @@ import React, { Children } from 'react'
 import { useState } from 'react';
 import Navbar from './Navbar/Navbar';
 import "./Dashboard.css"
+import { Link, useNavigate } from 'react-router-dom';
 
 const { Header, Content, Footer, Sider } = Layout;
 
 
-function getItem(label, key, icon, children) {
+function getItem(label, key, icon, link, children) {
     return {
       key,
       icon,
       children,
       label,
+      link
     };
-  }
-const menu_items = [
+}
 
-    getItem("Inbox", "inbox", <InboxOutlined/>),
-    getItem("Starred Mails", "star", <StarOutlined/>),
-    getItem("Malicious Mails", "malicious", <BugOutlined/>),
-    getItem("Sent", "sent", <SendOutlined/>),
-    getItem("Drafts", "drafts", <FileSyncOutlined/>),
-
-]
 
 const Dashboard = ({Content}) => {
 
-    console.log(Content)
-
     const [collapsed, setCollapsed] = useState(true);
     const [composeBtnText, setComposeBtnText] = useState("");
+
+    let navigate = useNavigate();
+
+    const gotoView = (path) => {
+        console.log("path")
+        navigate("/dashboard/" + path, {replace : true});
+    }
+
+    const menu_items = [
+        getItem(<Link to="/dashboard/inbox">Inbox</Link>, "inbox", <InboxOutlined onClick={() => gotoView("inbox")} />, "inbox"),
+        getItem(<Link to="/dashboard/starred">Starred Mails</Link>, "star", <StarOutlined onClick={() => gotoView("star")} />, "star"),
+        getItem(<Link to="/dashboard/malicious" className='malicious-menu-item'>Malicious Mails</Link>, "malicious", <BugOutlined onClick={() => gotoView("malicious")} />, "malicious"),
+        // getItem(<Link to="/dashboard/sent">Sent</Link>, "sent", <SendOutlined onClick={() => gotoView("sent")} />, "sent"),
+        // getItem(<Link to="/drafts">Drafts</Link>, "drafts", <FileSyncOutlined onClick={() => gotoView("draft")} />, "draft"),
+    ]
 
 
     const toggleCollapsedState = () => {

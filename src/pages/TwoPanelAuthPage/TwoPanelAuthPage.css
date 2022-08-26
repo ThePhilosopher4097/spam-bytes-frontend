@@ -22,12 +22,12 @@
 .panel:nth-child(2){
     background-color: #e5e5e5;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
 }
 
 .panel:nth-child(1){
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
     flex: 4.5;

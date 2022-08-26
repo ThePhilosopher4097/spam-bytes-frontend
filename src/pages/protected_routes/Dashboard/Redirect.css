@@ -1,0 +1,27 @@
+
+
+.redirect-wrapper{
+    background-color: #323467 !important;
+    height: 100vh !important;
+    width: 100% !important;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap; 
+}
+
+.redirect-wrapper > h1{
+    color: white;
+    font-weight: 300;
+    margin-left: 1.2em;
+    margin-bottom: 0.4em !important;
+}
+
+.redirect_illus{
+    height: 50vh ;
+    max-height: 600px;
+    min-height: 300px;
+
+}

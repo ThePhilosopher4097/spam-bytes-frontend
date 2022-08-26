@@ -7,6 +7,7 @@ exports.protected_axios = (path, data, ) => {
 }
 
 exports.getApiPath = (path) => {
+    // console.log(window.location.protocol + "//" + window.location.hostname + ":3000" + "/" + path)
     return window.location.protocol + "//" + window.location.hostname + ":3000" + "/" + path;
 }
 
@@ -17,4 +18,8 @@ exports.validateEmail = (mail) => {
     return (true)
   }
     return (false)
+}
+
+exports.capitalizeFirstLetter = (string) => {
+  return string.charAt(0).toUpperCase() + string.slice(1);
 }

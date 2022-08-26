@@ -18,18 +18,21 @@
     
 }
 
+.malicious-menu-item .ant-menu-item-selected{
+    border-left: 4px solid #5759A3;    
+    border-top: 1px solid #575aa31a;    
+    border-bottom: 1px solid #575aa31a;    
+    background-color: rgba(87, 89, 163, 0.1) !important;
+}
+
 .dashboard-sidebar .ant-menu-item-icon{
     font-size: 1.5em !important;
 }
 
 .dashboard-sidebar{
-    background-color: rgba(87, 90, 163, 0.05);
+    background-color: #575aa30d;
 }
 
 .ant-menu-item-selected:after{
     display: none !important;
 }
-
-/* .dashboard-view-container{
-
-} */

@@ -19,3 +19,31 @@ h1{
     justify-content: center;
 
 }
+
+.fido-button{
+    width: 100%;
+    margin: 0.6em 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6em !important;
+}
+
+.fido-buttons-wrapper{
+    min-width: 270px;
+    max-width: 360px;
+    width: 60%;
+}
+
+.createaccountsteps-wrapper, .inputs-container{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-carousel{
+    background-color: red;
+}
