@@ -8,7 +8,8 @@ exports.protected_axios = (path, data, ) => {
 
 exports.getApiPath = (path) => {
     // console.log(window.location.protocol + "//" + window.location.hostname + ":3000" + "/" + path)
-    return window.location.protocol + "//" + window.location.hostname + ":3000" + "/" + path;
+    //return window.location.protocol + "//" + window.location.hostname + ":3000" + "/" + path;
+    return "/" + path;
 }
 
 exports.validateEmail = (mail) => {
